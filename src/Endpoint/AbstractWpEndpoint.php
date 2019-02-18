@@ -79,7 +79,7 @@ abstract class AbstractWpEndpoint
      * @param array $data
      * @return array
      */
-    public function delete(){
+    public function delete( array $data ){
         $url = $this->getEndpoint();
 
         if (isset($data['id'])) {
